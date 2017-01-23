@@ -1,0 +1,1 @@
+cmd_/home/viswanadham/Training/linux/pm/lsmod/lsmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/viswanadham/Training/linux/pm/lsmod/lsmod.ko /home/viswanadham/Training/linux/pm/lsmod/lsmod.o /home/viswanadham/Training/linux/pm/lsmod/lsmod.mod.o

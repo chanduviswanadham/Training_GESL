@@ -1,0 +1,1 @@
+cmd_/home/viswanadham/Training/linux/mm/procmaps/mapsmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/viswanadham/Training/linux/mm/procmaps/mapsmod.ko /home/viswanadham/Training/linux/mm/procmaps/mapsmod.o /home/viswanadham/Training/linux/mm/procmaps/mapsmod.mod.o

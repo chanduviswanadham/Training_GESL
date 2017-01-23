@@ -1,0 +1,17 @@
+#include /*hello*/<stdio.h>
+#include <std/*chandu*/io.h>
+
+//chandu viswanadham program to remove comments
+
+int main()
+{
+	pritnf("//enter/* chandu */ the value:");
+/*	chandu bfvagsbv aksdjf asdbfascvlagsdf
+asdflha*sdbkfj 
+asdfj aklsf
+asd fnaskldf
+*/
+//chandu viswanadham program to remove comments
+	return 0;
+
+}

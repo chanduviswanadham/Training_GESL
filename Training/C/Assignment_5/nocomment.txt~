@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <std/*chandu*/io.h>
+
+
+int main()
+{
+	pritnf("//enter/* chandu */ the value:");
+
+	return 0;
+
+}

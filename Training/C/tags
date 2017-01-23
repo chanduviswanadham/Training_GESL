@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CLEAR_L_SETBIT	Assignment_1.c	465;"	d	file:
+CLEAR_R_SETBIT	Assignment_1.c	440;"	d	file:
+CLEAR_SD_SET	Assignment_1.c	488;"	d	file:
+MAXMIN	Assignment_1.c	426;"	d	file:
+SET_L_CLEARBIT	Assignment_1.c	477;"	d	file:
+SET_R_CLEARBIT	Assignment_1.c	453;"	d	file:
+SET_SD_CLEAR	Assignment_1.c	500;"	d	file:
+TOGGLE_SD	Assignment_1.c	512;"	d	file:
+b_copy	Assignment_1.c	/^int b_copy()$/;"	f
+bit_ts	Assignment_1.c	21;"	d	file:
+cnt_leading_clear_bits	Assignment_1.c	/^int cnt_leading_clear_bits(int num)$/;"	f
+cnt_leading_set_bits	Assignment_1.c	/^int cnt_leading_set_bits(int num)$/;"	f
+cnt_trailing_clear_bits	Assignment_1.c	/^int cnt_trailing_clear_bits(int num)$/;"	f
+cnt_trailing_set_bits	Assignment_1.c	/^int cnt_trailing_set_bits(int num)$/;"	f
+count_bit_clear	Assignment_1.c	/^int count_bit_clear(int num)$/;"	f
+count_bit_set	Assignment_1.c	/^int count_bit_set(int num)$/;"	f
+getbits	Assignment_1.c	24;"	d	file:
+invert	Assignment_1.c	/^int invert(int x, int p, int n)$/;"	f
+l_rot	Assignment_1.c	/^unsigned int l_rot(unsigned int num, int pos)$/;"	f
+main	Assignment_1.c	/^int main()$/;"	f
+main1	Assignment_1.c	/^int main1()$/;"	f
+r_rot	Assignment_1.c	/^unsigned int r_rot(unsigned int num, int pos)$/;"	f
+setbits	Assignment_1.c	/^int setbits(int x, int p, int n, int y)$/;"	f
+show_bit	show_bit.c	/^int show_bit(int deci)                                                          $/;"	f
+soneb	Assignment_1.c	/^int soneb()$/;"	f
+stwob	Assignment_1.c	/^int stwob()$/;"	f
+tog	Assignment_1.c	/^int tog(int num,int i)                                                                     $/;"	f

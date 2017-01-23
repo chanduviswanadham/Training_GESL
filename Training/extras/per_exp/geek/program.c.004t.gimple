@@ -1,0 +1,66 @@
+main ()
+{
+  int n.0;
+  unsigned int D.2515;
+  int D.2516;
+  int n;
+
+  try
+    {
+      scanf ("%d", &n);
+      n.0 = n;
+      D.2515 = my_size (n.0);
+      printf ("%d\n", D.2515);
+      D.2516 = 0;
+      return D.2516;
+    }
+  finally
+    {
+      n = {CLOBBER};
+    }
+}
+
+
+my_size (int n)
+{
+  int D.2519;
+  int D.2520;
+  sizetype D.2521;
+  sizetype D.2522;
+  bitsizetype D.2523;
+  bitsizetype D.2524;
+  sizetype D.2525;
+  sizetype D.2526;
+  bitsizetype D.2527;
+  bitsizetype D.2528;
+  sizetype D.2529;
+  char[0:D.2521] * a.1;
+  size_t D.2531;
+  void * saved_stack.2;
+  char a[0:D.2521] [value-expr: *a.1];
+
+  saved_stack.2 = __builtin_stack_save ();
+  try
+    {
+      D.2519 = n + 3;
+      D.2520 = D.2519 + -1;
+      D.2521 = (sizetype) D.2520;
+      D.2522 = (sizetype) D.2519;
+      D.2523 = (bitsizetype) D.2522;
+      D.2524 = D.2523 * 8;
+      D.2525 = (sizetype) D.2519;
+      D.2526 = (sizetype) D.2519;
+      D.2527 = (bitsizetype) D.2526;
+      D.2528 = D.2527 * 8;
+      D.2529 = (sizetype) D.2519;
+      a.1 = __builtin_alloca_with_align (D.2529, 8);
+      D.2531 = (size_t) D.2519;
+      return D.2531;
+    }
+  finally
+    {
+      __builtin_stack_restore (saved_stack.2);
+    }
+}
+
+

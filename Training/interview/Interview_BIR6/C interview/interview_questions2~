@@ -1,0 +1,2057 @@
+C Questions
+
+1. 	int main()
+	{
+		unsigned char *c;
+		c = 'A';
+	
+		while (c >= 0)
+			printf("%d\n", (*c)++);
+	}
+
+	What will be the output of above program?
+
+2. write a function to insert an element into a single linked list in ascending order.
+
+1. Size of a structure given that size of the integer
+	2. What operation we cant do with pointers
+	3. What will be C value?
+		int n = 7;
+		while(n>0) {
+		  n = n & (n-1)
+		  c++;
+		}
+		
+	4. What is the value of a & b intially a = 2081 and b = 1082?
+
+		a^=b^=a^=b^=a^=b;
+
+	1. Size of a structure given that size of the integer
+		struct abc { 
+				int a;
+				char b;
+				struct abc x;
+		}
+
+		struct abc { 
+				int a;
+				char b;
+				struct abc *x;
+		}
+	2. What operation we cant do with pointers
+	3. What will be C value?
+		int n = 7;
+		while(n>0) {
+		  n = n & (n-1)
+		  c++;
+		}
+	
+
+3. Then one question on linked list, It was like
+		100 nodes are present, Each node has one number between 1 to 100
+		but not in order. If I delete any node, how will you come to know
+		which node(means data) was deleted?
+	4. What is diffrence between Macro and Typedef
+	5. What is garbage collection
+	8. How will you count number of ones in a given integer number
+	9. What is portability
+	10. How can we intialize a integer variable's all bits to 1,It should be 
+	    portable?
+	
+	12. What is the disadvantage of Macro when we use GDB?
+	13. What is heap area?
+	14. What are compiler stages?
+	15. Advantages of macro.
+
+
+
+Unix and OS concepts
+
+	1. About IPC mechanisms, difference between message queues and shared memory?
+
+	2. What is RTOS, its featuers, interrupt latency, what is interrupts?
+
+	3. what is device driver? Why we need it? Do we need device driver to access memory?
+	
+	4. what is scheduling algorithm ? what scheduling algorithm unix uses? RTOS uses?
+
+	5. explain scheduling algorithm?
+
+	6. How is RTOS time deterministic?
+6. What threads will share?
+	7. A question on Raw socket
+	8. Which IPC we can use between 2 PC's? 
+		a. Semaphores b. Pipes c. Sockets d. None
+	9. One question on Malloc
+6. What is software Interrupt and Hardware interrupt
+	7. About watch dog timer, How can we convert the the Watchdog timer interrupt
+	   (Its a software interrupt)to hardware interrupt
+	7. A question on Raw socket regarding ip packet.
+	8. Which IPC we can use between 2 PC's? 
+		a. Semaphores b. Pipes c. Sockets d. None
+	9.  One question on Malloc
+	10. Some questions are repeated from seniors papers.
+	11. signals are part of IPC yes/no.
+	int main()
+		{
+			char *str="hello";
+			char *str1 ="world";
+			char *p,*q;
+			p=&str;
+			q=&str1;
+			while(*str1++ = *p++)
+				;
+				while(*str1++ = *q++);
+			printf("%s" star1);
+		}
+	
+	2. some question on protocol tcp udp. and their application.
+	3. what is multithreading and multiprogrmming.
+	4. Explain  concept of multtreading using CPU.
+	5. TCP/IP stack.
+	6. write a program to print the link data from the last node.
+	7. data structures stack , queue, link list, tree and their Aplication.
+	8. what is memory fragmentation.
+	9. what is static and their scope as variable and function.
+	10. where static, auto and globals are stored.
+	11. what is process and thread.
+	12. what is pipeline.
+	13 write a program to swap  two numbers.
+	14, write aprogram to find the first bit set in 32-bit number.
+	15. write a program to delete a node in link list.
+	16. represent two dimentional array using pointer,
+	17. array[] = str[] is it possible if not what error it will give. 
+	18. what is regular expression.
+	19.diffr4ence betwwen c and c++.
+	20.what is media gateway and media gateway controller.
+	
+
+
+
+Networking
+
+	1. what are sockets , how is it different from  other IPC mechanisms?
+
+	2. What is TCP and UDP? Why do we need UDP protocol when we have IP? how is it 
+	different from IP?
+
+	3. what is flow control, Give an example?
+
+	4. Give example for applications which uses TCP and UDP?
+5. ICMP protocol belongs to which layer?
+
+
+1.Why do we need static variable ?
+2.What is extern?
+3.strcat function implementation.
+4.How to access 3rd element from last in a linked list without traversing twice?
+5.Three persons are walking and each of them say one person is in front of me and one beh  ind me.How is it possible?
+6.*p() -> what is this?
+7.*a[] -> what is this?
+8.where are static variables stored?
+9.convert a[i][j][k] in terms of pointers.
+10.Explain semaphores. Why is it used?
+11.Whats the use of socket programming?
+12. int a;
+	int main()
+	{
+		fun();
+		fun1();
+		fun2();
+		printf("%d",a);
+	}
+	fun()
+	{
+		....
+		a=10;
+	}
+	fun1()
+	{
+		...
+		a=12;
+	}
+	fun2()
+	{
+		...
+		a=13;
+	}
+   In the above program what is the output if i declare a as static globally?
+13. You have two arrays declared as int a[10],b[10];
+	if you assign a=b what is the error and how can we overcome it?
+14. Where are local variables stored ?what is the scope?
+15. Why do we need extern variables ? 
+
+
+
+1.  which operation on pointer is not valid, if p and q are two pointers  fun (int *p, int*q)
+
+        a)  p + q
+        b)  p * q
+        c)  p / q
+        d) None of these.
+
+            Here all the oprations are invalid . I Dont know whether it is wrong question or wrong answer.
+
+
+2.
+    Struct MyList {
+                Int c;
+                char *p;
+                struct MyList list;
+};
+
+what is the size of struct Mylist;
+          A) 8
+          b) 16 
+          C) 12
+          d) None of these.
+
+            ANS is D . because in the declaration of structure itself wrong , Third variable type struct MyList list is wrong becaues , we can only have pointer to structure not
+            structure itself.
+
+
+3.
+    struct  Mylist {
+            int c;
+            char *d;
+            struct Mylist *m;
+}*list;
+
+
+what is the size of struct Mylist ---- Ans is 12.
+
+
+4.
+
+int *( *test) (char*)  ---> what it represents;
+
+Ans - test is pointer to function and returns pointer to an int.
+
+5.
+What is signal we get when we get CTRL-C .
+
+Ans - SIGINT.
+
+5.
+
+char str[7]="ABC";
+char str2[4]="yxz" ;
+
+char *s, *t;
+
+*s = str;           // wrong
+*t = str2;          // wrong
+
+while(*s) s+;
+
+while (*s++=*t++) ;
+
+printf("str = %s", str);
+
+Ans ---- IT is strcat function . But they are assing to *s , IT is not  correct , we have to assign to s only .. There is no answer like  any Error .
+
+            So I marked - "ABCyxz" .
+
+6.
+
+Bit  count program .
+
+for(num = 7 ; num > 0 ; )
+{
+    num = num & (num - 1) ;
+        count++;
+}
+
+printf ("%d", count);
+
+Ans - 3.
+
+
+7. what  fork returns to child - Ans 0.
+
+
+8.
+Pointers.
+
+int a[]={4};
+int b[] = { 1, 2, 3, 4}
+
+printf("%d %d ", sizeof(a), sizeof(b));
+
+Ans - 4, 16 ;
+
+9.
+
+int a[] = { 1, 2, 3, 4};
+int *p = (&a + 1) ;
+printf ("ans = %d " , *(a + 1),  *(p - 1) );
+
+
+Ans - 2 4 (values may change , but understand pointer arthematic.)
+
+
+10.
+
+int a = 10, b= 20;
+a^=b^=a^=b^=a^=b^=a;
+
+Swapping two times ....
+
+We will get same number it was intially ........
+
+Ans - 10 , 20;
+
+
+11. One question on raw_socket.
+
+
+12. Malloc question .
+
+13. Myalloc question.
+
+14. In which layer Routing will takes place ;
+        Network Layer.
+
+
+15. main() {
+
+        int i ;
+        for(i = 5; i < 7; i++) {
+                  fun();
+        }
+}
+
+fun () {
+
+    static int val = 0;
+    val++;
+    printf("%d\n", val);
+}
+
+Ans - 1, 2.
+
+16.
+main() {
+   
+    int val = 10 ;
+    fun(val++);
+    printf("%d", val);
+}
+
+fun( int i) {
+       
+    printf("%d\n", --i);
+}
+
+Ans - 9 , 11
+
+17.
+for( i = 0 ; i < argc ; i++) {
+    printf(" %s" , argv[i] );
+}
+
+what is output - if   input is ./a.out *
+
+Ans - prints lists of files in directory.
+
+
+
+Interview .
+
+1. Explain OSI layer.
+2. int a[10], b[10]  then a = b ; what error it will give ?
+3. If three persons were walking  each of them will say one is infrount of me, and one is behind me , how is this possible.
+4. About function pointers ?
+5. Reversing a linked list ?
+6. About My projects (regarding Testing project or devolopment projects.  )
+General :
+    1. strengths & weekness ?
+    2. Are you interested work in telecom domain.
+   
+
+> 1> write a program to find number of repeated digits in a given mobile
+> No.(example 9886559332  Ans: Repeated digits are 8 5 3 9 ).
+> 
+> 2> write strcat and strcpy  fuctions;
+> 
+> 3> what is static fuction .
+> 
+> 4> Explain malloc.
+> 
+> 5> write a program to insert a node at the end of singly linked list.
+> 
+> 6> Aloocating dynamic memory to an array.
+> 
+> 7>Explain fork.
+> 
+> 8>Explain diffrent IPC mechanisms.
+> 
+> 9>Difference between process and thread.
+> 
+> 10> some questions on threads and signals.
+> 
+> 11>Questions on Mutex and semaphore.
+> 
+
+
+1) what is a static variable?
+
+2) what is the initial value of static variable?
+
+3) what is global variable?
+
+4) where does the global variable will be stored?
+
+5) where does the local variables are stored?
+
+6) what is extern variable?
+
+7) what is recursion?
+
+8) what happens if a variable is static within the recursion ?
+
+9) what is a structure?
+
+10) what is a linked list?
+
+11) what is the difference between linked list and array?
+
+12 ) if i know that, i have to use 1000 bytes  then which one will you 
+prefer? linked list or array?
+
+13) what is the disadvantage of linked list?
+
+
+14) what is cut command?( my testing project )
+
+15) how you fetch the 3 character from the file using cut command?
+
+16) how will you implement cut command?
+
+17) what is the first line you will write in shell?
+
+18) how ls will work generally ? whether it will create child or not?
+
+19) why you need to write that line?
+
+20) how to print the value of var1 in shell?
+
+21) is cut is internal command or not?
+
+22) what is pointer?
+
+   1. Write the server client program using socket s/m calls
+	(From #define to return completely).
+    2. What is the difference between MUTEX and SEMAPHORE.
+    3. Reverse a Linked List(Without finding the number of nodes)
+    4. Fuction arguments are a number,position1 and position2.write a
+	function which swaps the two bit positions in that number.
+    5.Write a complete program using pipes to communicate between two   
+	processes?
+    6.What is Multicast, Broadcast type of messaging?
+    7.Why TCP is required when u have IP(Inter-networking Protocol)?
+    8.What is SS7?
+    9.ICMP,IGMP,Semaphores?
+    10.Given an array of 100 integers.Find the greatest among them
+	without using > , < than operators.
+    11.Write Bubble sort Program. 
+
+
+1) What is RTOS? Why is it called real-time? Why is it efficient than other OSes? 
+
+2) What is constant? Why and Where is it used? Where are static, global, local variables stored? Did u use volatile variable in your drivers? Which variable do u prefer(in particular task)? 
+
+3) What is interrupt handling? Why are they used instead of normal execution? How is ISR called and executed? 
+
+4) What are different IPC mechanisms? Which ipc do u prefer and why? What is deadlock? Which ipc did u use in project and why? How is synchronization achieved, give example? How does Mutex work? Did you work on shared memory? What is critical section? How do u avoid deadlock?
+
+5) You have data coming from bus and Program Status Register will indicate whether data is available and you are processing 500 bytes of data and when you are processing 250 th byte,if PSR will indicate data is available, how do u handle processing data(either in drivers or
+normal way) with PSR indication?   
+
+6) Explain OSI model? What protocol is used in datalink layer? Tell various connection methods in physical layer? How data is transmitted through optical fiber and cable? How are the bit patterns generated, and how will the destination understand the data sent?
+
+7) What is make file and why is it used?
+
+8) What is CVS? What are advantages of CVS? 
+
+19 Explain three way handshaking
+
+20 diff between connection oriented and connetion less
+
+21what are the major protocols in Transport layer
+
+3> Architecture of the Linux
+8.Booting concepts in h/w terms.
+9.What do U know abt PC arachitecture.
+10.BIOS functionalities.
+11.OSI & TCP/IP model .
+12. Have U ever installed server.
+13.Different methods of dynamically configuring IP Addr.
+14.Explain IPV6 support testing ( related to project )
+
+
+
+2. Difference between Structure and Union
+
+3. About different Process Scheduling Algorithm.
+
+4. Concept on Deadlocking
+
+5. Explain about the DHCP Project in general and also asked to explain about my part in it
+
+6. Asked about the client server model
+
+7. What are the system calls used in socket programming(connection-oreinted) w.r.t client and server
+
+8. Difference between TCP and UDP
+
+9. How will u handle retransmission,timeout in UDP
+
+10. Concepts on Fragmentation
+
+11. Concepts on Memory leaks
+
+12. Explain briefly about SMTP and POP3 protocols and my part
+
+13. About Memory management
+
+14. Steps for invoking debugger using gdb
+
+15. Write OSI and TCP/IP model
+
+16. Write TCP/IP Stack
+
+17. Explain Dup system call and how u will redirect the output to a file instead of std output
+
+18. which layer does ftp belongs to
+
+19. How u send a message from DHCP Client(i.e Broadcast)
+
+20. What is switch,hub,
+
+21. Asked to write the memory layout and asked where the local,static,global,instructions stored in the layout
+
+22. How to access a variable which is defined in one file from another file,not using extern(hint:by passing
+    the variable in a function,and declaring in the header file)
+
+23. How do u broadcast using a system call
+
+24. Difference between Library function and system calls
+
+25. In what way does DHCP useful for administrator
+
+26. storing a structure in a file it will be in not readable format why is it?
+
+26. Important- to which clients do you did the projects
+
+
+   1. COMMANDS:
+	 
+Sed, Awk, grep, find and cut commands.
+Write 5 test cases for any command.
+Shell script to print a file in reverse ( rev/ tac )        	
+Shell script to print command line arguments ( $1, $2, ..)
+Sequence of commands to kill a process with a particular name 
+ps -e | grep process_name | awk '{ print $1 }' xargs kill -9
+Using Sed replace a pattern in a file, delete empty lines in a file
+Commnad to check exit status ( echo $?); what's $$, $! 
+Test cases for grep.
+
+
+
+2. UNIX & NETWORKING:
+
+	*File data structures ( ufdt, file table, inode table)
+	*Process data structures( process table, pregion table, region table ).
+	*fork(), vfork() system calls( differences, when to use vfork), Copy On Write( COW).
+	*mount, open, exec, wait, signal system calls.
+	*Signals, signal handling, how to send signals ( kill command or system call).
+	*Shared memory( with system calls: shmget, shmat, etc  )
+	*Semaphores( used for synchronization, like access to shared memory)
+	*TCP/IP protocol stack, connection establishment( 3 way handshaking), and system calls
+	  like socket, bind, listen, accept, connect etc.
+	*iterative and concurrent Servers.
+	*Daemon, orphan, and zombie process.
+	
+
+3. C questions:
+
+	*swap 2 variables without using temporary variables
+		a = a + b ;
+		b = a -  b ;
+		a = a - b ;
+
+		or for integers only
+		a ^= b ;
+		b ^= a ;
+		a  ^= b;
+	*recursive function to find the factorail of a number.
+	*prototype of main, printf
+	*program to print command line arguments.
+	
+	*linked list operation( insertion, deletion, etc).
+	*Storage classes( automatic & static) and storage class specifiesrs( auto, static, register, extern) in C.
+	*Bitwise operators.
+	*Implemetation of malloc( uses brk system call).
+	*Why library functions are needed, when system calls are therre for the same purpose.
+
+What is call back fuction & reentrant code? 
+3.  Can we have lseek on a tape device?
+4.  What are the challenges faced while programing / coding issues ?
+5.  Write a program to create a binary tree & sort it ?
+6.  How does malloc works ?
+
+
+1) How to pass entire array to a function as call by value ?
+2) About structure padding
+3) How to avoid stracture padding without changing the code ? 
+4) Write make file (they specified the file and dependencies)
+5) Write a make file to create static library
+6) Write a make file to create shared libray
+7) About static and extern.
+8) There is one header file which is included in two .c files. In  that header one globle variable is defined. How to avoid multiple declaration error?
+9)    Int a;  printf(“%u” , &a)  if it prints 67. Is it possible ? (He wants to ask whether the address of integer can be starts with odd address ?)
+10) Write a command which selects only directory names from ls -l output.(ls -l | sed -n '/^d/p')
+11) Write a program to implement semaphore operation.
+12) What is advisory lock.
+13) What is mandatory lock
+14) Who will take care about mandatory locking ?
+15) What is spin lock ?
+16) What is dead lock ?
+17) In which case we have to use spin locks
+18) Is it possible to have dead lock situation where there is only one process and only one resource
+19) What is paging ?
+20) In case of paging system suppose reading is happened at the end of one page ,How it locates the next address to read ?
+21) If one code is written to the system which does not support paging, What changes has to be made to run it on the system which supports paging ?
+22) How rm works ?
+23) What is the difference between VxWorks kernel and Linux kernel ?
+24) Why DOS is not multitasking system and Linux is multitasking ?
+25) Multitasking is implemented in software level or hardware support is also needed?
+26) What is the stress testing ?
+27) For commands what is stress testing ?
+28) How open system call works in kernel level ?
+29) Where monolithic kernels are used ? Where micro kernels are used ?
+
+
+10. What is makefile?
+11. Write a program to generate 5 childs they run parrellaly?
+12. What are the different states of the process?
+13. What is the difference b/w zombie and orphan?
+14. What grep command will do?
+15. What are the basic datatypes in c?
+16. What is the difference b/w structure and union?
+17. What is structure padding?
+18. Why allways cpu wants memory access from even address?
+19. Can you explain the bit fields in the structure?
+20. Write a program to implement stack using linked list.
+21. How can you get the environment variables?
+22. Write the kernel architecture?
+23. What is the different types of RTOS?
+24. How can you load the device driver modules?
+25. Did you compile a kernel?
+26. What are the different driver modules?
+27. Which commmand you used in linux to load the modules?
+28. Explain the shared memory?
+29. Did you write any kernel programs?
+30. What is the difference b/w hardware and software interrupts?
+31. What is privilaged mode ? Give examples?
+32. Explain the interrupt handling?
+33. How the system call execution takesplace?
+34. Explain the context layers of the process?
+35.  What is Demand paging ?
+36. What is shared library?
+37. Which command you used to check shared library?
+38. What is nm?
+39. Explain virtual address mapping?
+40. From where malloc allocates a memmory?
+41. If you call malloc(1GB) entire how much memory is allocated?
+42. What sbrk and brk will do?
+43. Did you read any linux kernel book?
+44. What are the File systems of LINUX?
+45. What is the difference b/w EXT2 and EXT3?
+
+
+1) How make works?
+
+2) How do you find an infinite loop using GDB?
+
+3) How do you debug dynamic and static linking using GDB?
+
+4) What is core dump? And why it is required?
+
+5) Which option of compilation is used for GDB? And what is the extra information that is added to the executable(a.out)?
+
+6) What is the advantage of dynamic linking over static linking?
+
+7) Types of testing.
+
+8) How do you determine packet loss in a LAN?
+
+9) How do you determine if  your NIC(Network Interface Card) is not working?
+
+10) What does “ifconfig” do?
+
+11) What is the significance port number?
+
+12) Difference between hub and switch ?
+
+13) Have you tested any networking commands?
+
+14) How to automate the tests? And different methods to automate.?
+
+15) How do you come to know   whether  the network cable is having problem or  the system is having problem in LAN?
+
+16) In client server how do you find whether  the  client is having problem or server?
+
+
+
+1) Do u know about DHCP ?
+2) What is ping ? How are u going to debug ping command ?
+3) Explain why and how are u going to use memprof tool ?
+4) Why did u get into testing and not development ?
+5) If u are asked to do development how are u going to handle it ?
+6) How are u going to check the default shell in your system ?
+7) How can u change the default shell ?
+8) How are u going to find out if the server has failed or not responding ?
+9) What does this first line #!/bin/bash in the shell script indicate ?
+10) Which shell will interpret if u use #!/bin/csh as the first line in the
+	shell script ? and which will interpret if u run script without using this
+	fitst line ?
+12) Do u know to do automation and how did u automate command testing ?
+13) What is the difference bwn grep and egrep ?
+14) What will fgrep do ?
+
+1. Explain the Process Data Structure. What happens when a process is created.
+2. What is a Zombie State .? what is orphan process? Is orphan also a state.
+3. What are signals? How are they implemented ?
+4. How are default signals handled.?
+5. What are different modes of signals?
+6. What is fork? What is the difference between fork and vfork ?
+7. What is the difference between  dup and dup2?
+8. How to substitute a string in shell Programming ?
+9. In shell , how will you find the details of devices which have been mounted ?
+10. How will display MSB and LSB of an int?
+11. Reverse a linked list.
+12. What will  find command do?
+
+
+
+1) C Programming
+2) what does ptr++ and *ptr++ will do?
+3) write a program to print all command line arguments (20 parameters)
+4) Storage Classes Scope and where they will be stored
+5) differnce between Global and staic variables
+6) few simple programs on Singe linked list
+7) How will u delete a node when u r given the ptr to that node only and not the previous and next nodes
+8) Is function overloading there in C?
+Ans: Runtime polymorpism
+Eg:
+main()
+main(int argc, char *argv)
+9) How to pass entire array to a function as call by value?
+10) About structure padding
+11) How to avoid structure padding without changing the code? 
+12) About static and extern.
+13) There is one header file which is included in two .c files. In  that header one globle variable is defined. How to avoid multiple declaration error?
+14) Int a;  printf(“%u” , &a)  if it prints 67. Is it possible ? (He wants to ask whether the address of integer can be starts with odd address ?)
+15) Write a program to generate 5 childs they run parallel?
+16) What are the basic datatypes in c?
+17) What is the difference b/w structure and union?
+18) What is structure padding?
+19) Why allways cpu wants memory access from even address?
+20) Can you explain the bit fields in the structure?
+21) Write a program to implement stack using linked list.
+22) From where malloc allocates a memmory?
+23) If you call malloc(1GB) entire how much memory is allocated?
+24) How do you inlude a header file by usig gcc?
+25) What are the different compiler options?
+26) Write a function to reverse the string without using third variable.
+27) What are static and volatile variables, whats the difference between them? What is the use of volatile qualifier?
+28) Where are the locals, globals and static variables stored?
+29) What happens if u call main() inside main()? why seg-fault occurs? 
+30) Why u get segmentation violation? Write a program to get it.
+31) Write a program to reverse a linked list using recursive and non recursive method.
+32) Write a program to reverse a string . (without using third variable)
+33) How will display MSB and LSB of an int?
+34) Reverse a linked list. 
+35) What is call back fuction & reentrant code? 
+36) Write a program to create a binary tree & sort it ?
+37) How does malloc works ? 
+38) How stack frames are created when function is invoked? 
+39) Delete a specified node in a single linked list 
+40) How to generate segmentation fault? 
+41) What is structure padding? 
+42) How to remove padding?
+43) How to remove only one byte of padding?
+
+
+Unix/ Linux
+1) About umask
+2) what are signals
+3) about fork()
+4) vfork()
+5) Semaphores and /mutex
+6) Process and Threads
+7) Write a program to implement semaphore operation.
+8) What is advisory lock
+9) What is mandatory lock
+10) Who will take care about mandatory locking ?
+11) What is spin lock ?
+12) How open system call works in kernel level ?
+13) What are the different states of the process?
+14) What is the difference b/w zombie and orphan?
+15) Write the kernel architecture?
+16) How can you load the device driver modules?
+17) Did you compile a kernel?
+18) What are the different driver modules?
+19) Which commmand you used in linux to load the modules?
+20) Explain the shared memory?
+21) Did you write any kernel programs?
+22) What is the difference b/w hardware and software interrupts?
+23) What is privilaged mode ? Give examples?
+24) Explain the interrupt handling?
+25) How the system call execution takesplace?
+26) Explain the context layers of the process?
+27) What is Demand paging ?
+28) What is shared library?
+29) Which command you used to check shared library?
+30) What is nm?
+31) Explain virtual address mapping?
+32) What sbrk and brk will do?
+33) Did you read any linux kernel book?
+34) What are the File systems of LINUX?
+35) What is the difference b/w EXT2 and EXT3?
+36) What is journaling?
+37) What fsck will do?
+38) Explain the imlplementation of Linux file system?
+39) What are the contents of inode?
+40) What is Copy on write? Where it is used?
+41) What is the difference b/w fork and vfork?
+42) What is delayed write?
+43) What is PCI and how many devices it supports?
+44) What is the scheduling algorithm used in unix?
+45) Explain physical memory layout. Explain different segments. 
+46) Where are the shared libraries loaded?
+47) How do u create shared libraries?
+48) Why the size of the a.out which is linked with the shared library reduced in size?
+49) When are the shared libraries loaded in main memory?
+50) If two processes uses one shared library, how the other process come to know that particular library is already loaded in memory?
+51) What are signals? how they have been implemented?
+52) When is a signal handled?
+53) What happens if same signal is sent more then once?
+54) Explain wait system call.(arguments,return values) 
+55) How does the parent process comes to know the child exited.(process
+table entry) 
+56) Explain fork and vfork. Explain the difference b/w them
+57) Explain the Process Data Structure. What happens when a process is created.
+58) What is a Zombie State? what is orphan process? Is orphan also a state.
+59) What are signals? How are they implemented ?
+60) How are default signals handled?
+61) What are different modes of signals?
+62) What is fork? What is the difference between fork and vfork?
+63) What is the difference between dup and dup2?
+64) Can we have lseek on a tape device? 
+65) How system call is invoked? 
+66) When SIGBUS signal is generated? 
+67) What is TLB?
+68) What is shared memory?
+69) How to synchronize processes when they access shared memory?
+70) What are the types of semaphores?
+71) How will you synchronize n processes from accessing r resources?
+
+
+
+Shell
+1) write shell script  to print command line arguments
+2) Meaning of $$,$!, $*,$@
+3) suppose you have given process.. sleep 30 instead of 300 . how will you kill that process.
+4) Write a command which selects only directory names from ls -l output.(ls -l | sed -n '/^d/p')
+5) How rm works ?
+6) How are u going to check the default shell in your system ?
+7) How can u change the default shell ?
+8) What does this first line #!/bin/bash in the shell script indicate ?
+9) Which shell will interpret if u use #!/bin/csh as the first line in the shell script ? and which will interpret if u run script without using this first line ?
+10) What is the difference between grep and egrep ?
+11) What will fgrep do ?
+12) Which editor you used? And what are the modes?
+13) How do you yank last but 1 buffer contents using vi commnds?
+14) What are the commands you know?
+15) By using ps command how do you get the environment variables?
+16) How do you get the hidden process info in ps?
+17) How do you copy a directory by using cp command?
+18) Do you know CVS?
+19) What grep command will do?
+20) How can you get the environment variables?
+21) How to substitute a string in shell Programming?
+22) In shell, how will you find the details of devices which have been mounted ?
+23) What will  find command do? 
+24) How have you done cp command testing?
+25) Have you written any shell scripts?
+26) Have you written any c pgm to test cp command?
+27) How cp command works?
+28) Which system calls does cp use?
+29) What are the errors that you get in cp command?
+30) Why can't you create a symbolic link in other directory using cp command?
+31) How about ln command does it work for the above condition? If not why?
+Make
+1) How make works?
+2) What is makefile?
+3) Write make file (they specified the file and dependencies)
+4) Write a make file to create static library
+5) Write a make file to create shared libray
+6) How will u write MAKE file?
+7) If the path of a particular header file is changed how will u inform the MAKE. 
+8) How to change all the target name in make file with a single operation?
+
+
+Operating System
+1) Process and threads
+2) Virtual Memory
+3) Problem with parallel execution
+a=b+c
+d=x+y
+s=a+d
+HOw will u make them to execute in Parallel
+ans:
+P1: a=b+c
+P2: d=x+y
+Then any of them to do s=a+d
+4) What do u know about multi-threaded applications?
+5) What is dead lock ?
+6) In which case we have to use spin locks
+7) Is it possible to have dead lock situation where there is only one process and only one resource
+8) What is paging ?
+9) In case of paging system suppose reading is happened at the end of one page. How it locates the next address to read ?
+10) If one code is written to the system which does not support paging, What changes has to be made to run it on the system which supports paging ? 
+11) What is paging? 
+12) Any real life use where multiple resources are accessed in synchronization
+13) How and Where counting semaphores are used explain?
+RTOS
+1) What is the difference between VxWorks kernel and Linux kernel ?
+2) Why DOS is not multitasking system and Linux is multitasking ?
+3) Multitasking is implemented in software level or hardware support is also needed?
+4) Where monolithic kernels are used ? Where micro kernels are used ?
+5) What is the different types of RTOS?
+6) How do you convert Linux as a RTOS? 
+7) What is virtual address and physical address?
+8) How virtual address is mapped into physical address? Which hardware does it?
+
+GDB
+1) How do you find an infinite loop using GDB?
+2) How do you debug dynamic and static linking using GDB?
+3) What is core dump? And why it is required?
+4) Which option of compilation is used for GDB? And what is the extra information that is added to the executable(a.out)? 
+5) what is GDB. how will you set break point to a particular line number.
+6) How will you debug the child process?
+7) If you set a breakpoint to a function, and call the function inside the fork( ) then to which process that breakpoint is set(child or parent).
+8) How will u check the stack of the process?
+9) Does separate stack is created for child process?
+
+
+GCC
+1) What is the advantage of dynamic linking over static linking?
+Other Tools
+1) Explain why and how are u going to use memprof tool ?
+2) What is GCOV? how will u use it?
+3) Explain what are all the things u get from GCOV 
+4) What is GCOV? What it does? Explain
+
+5) Networking
+6) How do you determine packet loss in a LAN?
+7) How do you determine if  your NIC(Network Interface Card) is not working?
+8) What does “ifconfig” do?
+9) What is the significance port number?
+10) Difference between hub and switch ?
+11) Have you tested any networking commands?
+12) How do you come to know whether  the network cable is having problem or  the system is having problem in LAN?
+13) In client server how do you find whether the client is having problem or server?
+14) Do u know about DHCP ?
+15) What is ping ? How are u going to debug ping command ?
+16) How are u going to find out if the server has failed or not responding ?
+17) What is SIP?
+18) How will you do automation for FTP client and server? 
+19) What is stress testing?
+20) How do you do stress testing to cp command?
+
+
+21) Testing
+22) Types of testing
+23) How to automate the tests? And different methods to automate?
+24) write test plan and test cases for mv, grep and ls
+25) What is the stress testing ?
+26) For commands what is stress testing ?
+27) Why did u get into testing and not development ?
+28) If u are asked to do development how are u going to handle it ?
+29) Do u know to do automation and how did u automate command testing ?
+30) What is testing? why do we need it?
+31) What is regression testing, performance testing? 
+32) Which tool have you used in cp testing?
+
+
+
+Q 1) Memory copy without using a memcpy function . First tell me the logic and code
+	Question Description: U have a memory from x address to y address.
+	---------------------------------------------------------
+	---------------------------------------------------------
+	X				       Y
+	The data is thr from x to p ..don't how much size of data
+	---------------------------------------------------------
+	---------------------------------------------------------
+	X	                 p		       Y
+	We need to move this data from q to Y taking all condition
+	Condition 1. we  should not loose the data 
+		  2. The memory should not overlap and memeory should nt cross Y. U don't have memory after Y
+		 3 U have only memory between X and Y
+	---------------------------------------------------------
+	---------------------------------------------------------
+	X	           q     p		       Y
+
+
+	Hint for Ans: U should copy the data reversly 
+
+	Q 2) Question on Bit.Bits should be btwn location X to p (Refer above digram)
+	Question Descpriotn: We should move the data from Bit -1 to 4 to 10 to 14. 
+	Condtion when u DO right or left shift u will losse the data. data loss should be
+	taken care
+	
+	Q 3) Question on linked list. Insert a node at the front/Rear side of the list and also
+	      Delete the node from the linked list. Singly Linked list
+
+
+	Q4) expalin different type of library
+		static , shared and dynamic 
+
+	Q5)explain GILB
+	
+	Q6)write a script to change the name of the all files in a directory
+
+3. Do you know about HTTP?
+	4. Types of datastructure?
+	5. TCP/IP header format?
+	6. reverse linked list?
+	8. Step that you follow while write a program?
+	7. Swap first m elements of an array to end of the array?
+
+
+
+	
+23: How signal handling is done 
+
+24: How interrupts are handled
+
+25: what to do if i want to delete the process after executing.
+
+26: Can fork be done in threads anf if done how and what will happen.
+
+27: Difference between threads and process.
+
+28: Different IPC mechanisms.
+1. what is TCP/IP?
+2. Three way and Four way handshaking.
+3. In which layer bridges,routers and switches work?
+4. Data link layer is divided into how many sub layers and what are those?
+5. What is the function of MAC layer?
+6. What is the header length of TCP?
+7. Where is window size set ?
+8. Difference between static and register with memory diagram.
+9. What are IPC mechanisms?
+10.How do you identify server and client program?
+11.reverse bits program.
+12.How do u test linked list?
+
+
+1.Why do we need pointers?
+2.Can we return more than two values from a function without using Pointers?
+2. What are the advantages of pointers?
+3. What are the disadvantages of pointers?
+4. Write a program equivalent to the below program using pointers?
+ Main() {
+int x;
+x = 5 * 2;
+printf(“%d”, x);
+}
+main() {
+int *x;
+x = (int *)malloc(sizeof(int));
+*x = 5 *2;
+printf(“%d”, *x);
+free(x);
+}
+6.Where do we use single pointers and double pointers?
+7.Write a program to get a string from the console and return to the calling function without return value?
+
+
+explain 3way 4way handshaking.
+explain tcp/ip layers?
+explain connecting devices[hub, repeater, router,...]
+explain how ping works?
+explain packet capturing.
+explain tcp dump.
+in which layer icmp is present?
+explain sub layers of data link layer[MAC and LLC]
+
+how you declare a constant variable?
+explain pre increment and post increment.
+diff between preincrement and post increment in case of pointers?
+
+int a[] = {1,2,3,4,5};
+p = a;
+pf(%d,*p++);
+
+
+
+
+1. 
+
+void fun(int p)
+{
+p=p+1;
+return;
+}
+
+int main()
+{
+int p = 012
+fun(p);
+printf("%d\n",p);
+}
+
+Answer : 10
+
+
+2. 
+
+int main()
+{
+	printf("%d\n", argv[argc]);
+}
+
+
+Answer : Compiler error. 
+	 If we think argv and argc are declared than answer is 0.
+
+
+3.
+
+int i;
+
+fun(int j)
+{
+int i=0;
+i=i+j;
+printf("%d ",i);
+return;
+}
+
+int main()
+{
+int j=10;
+fun(j);
+printf("%d %d\n",i,j);
+}
+
+Answer : 20 0 10
+Example for scope of variables.
+
+
+4.
+
+#define x 10
+;
+
+int main()
+{
+	printf("%d\n", x);
+}
+
+Answer : 10
+
+
+
+5.
+
+#define big (x,y) x>y?x:y
+
+int main()
+{
+	printf("%d", big(10,20));
+}
+
+
+Answer : Compiler error, as space b/w in big & (x,y) in macro defination.
+
+
+
+6.
+
+extern int add(int,int);
+extern int i;
+
+int main()
+{
+	printf("%d",add(100,200));
+}
+
+int add(int a, int b)
+{
+	int i;
+	i=a+b;
+	return(i);
+}
+
+Answer : 300
+
+
+7.
+
+int main()
+{
+char c=126;
+
+c++;
+if (c=='a')
+c--;
+else
+c++;
+
+printf("%d\n", c);
+}
+
+Answer : -128
+
+
+8.
+
+int main()
+{
+char *str="Sony is Japanese based company"
+char *tmp;
+tmp=str;
+str=strstr(str,"Japanese ");
+printf("%d %d\n",&tmp, &str);
+strcat(tmp,str);
+printf("%s",str);
+}
+
+
+Answer : Segmentation Fault.(run time error)
+	 
+
+9.
+
+struct exp{
+int a;
+int b;
+int c;
+}
+
+
+int fun(struct exp *s1)
+{
+	printf("%d",s1->a);
+	printf("%d",s1->b);
+	printf("%d",(*s1).c);
+}
+
+
+int main()
+{
+	struct exp s1;
+	s1.a=10;
+	s1.b=20;
+	s1.c=30;
+	fun(&s1);
+}
+
+
+Answer : Compiler error(semi-colon missing after struct)
+
+
+10.
+
+#define Max(a,b) a>b?a:b
+
+
+int main()
+{
+        printf("%d\n", Max(900,100)+10);
+}
+
+Answer : 900
+
+
+11.
+
+int main()
+{
+	printf("");
+	printf();
+	printf("%d");
+}
+
+Answer : b is invalid
+
+
+
+12.
+
+Explain
+int * (*fun)(int (*a)[])
+
+
+Answer : A function pointer which takes argument as pointer to an integer array
+and returns integer pointer.
+
+
+13.
+
+what is size of following..
+
+
+int *a[10];
+int (*fun)();
+void *fun();
+
+
+Answer : 40 4 1
+
+
+14.
+
+file1:
+
+	int a[10];
+	fun(int a[],int size)
+	{
+		printf("%d\n", sizeof(a));
+	}
+
+
+file2:
+
+	extern int a[];
+	extern fun(int [],int);
+	
+	int main
+	{
+		fun(a, sizeof(a));
+	}
+
+
+Answer : Compilation Error.
+
+
+15.
+
+	char *s = "char *s = %c%s%c;main(){printf(s,34,s,34);}";
+	main(){printf(s,34,s,34);}
+
+
+Answer : Prints its own code
+
+
+1. Write a recursive program to find factorial of a number.
+2. Write a program to insert a node in singly linked list.
+3. Write a standard make file.
+4. Different type of testing methods and concepts.
+5. What is equivalence partitioning.
+6. Different type of conditions used in if statement of shell script (EX: -eq,-z -d -x -gt).
+7. What is static function in c++.
+8. Frequently used make macros. 
+
+
+
+
+1. Explain Memory Layout of C Program?
+2. What is Linkage Directive?
+3. Write a program to reverse a linked list?
+4. Explain about socket programing using TCP protocol?
+5. About shell script,c++(strongly recommended),awk,sed?
+6. Write a makefile and how to execute a makefile which is in other directory?
+7. Explain the difference between Threads and Process?
+8. Write a program to create two threads and they have execute a single handler that should be protected?
+9. What is the difference between Threads in Linux and solaris?
+10. Explain about error flags?
+11. Questions on project ? 
+
+
+
+1. Write a program to find factorial of number. How can we handle if the result is greater than int or double or long double.
+2. Write a program to count bits in a number. 
+1. 2 normal methods
+2. count the bits using look up table.
+3. Write a program to sort numbers using quick sort ?
+4. how to set a break point in a gdb?
+5. What are the difficulties you come across while doing a
+project(REAL_TIME SCENARIOS) ?
+6. explanation of projects?
+7. Command testing project .
+1. how you can fix bug (in rm command).
+2. about race conditions.
+8. Explanation about static variable ?
+9. C++ questions
+10. Makefile and its explanation? 
+
+
+               
+
+1. what is static?
+2. what is extern? where it will store. 
+3. Difference between the static and global variables.(about the scope)
+4. write a function to calculate factorial of a given number(optimized way)
+5. difference between the process and thread
+6. what is a semaphore?. How the Semaphores are implemented internally.
+7. What is the Difference between the singly linked list and doubly linked list.
+Specify the significance of each one.
+8. what is  pass by value and pass by reference? what is the significance of each.
+9. How malloc will works internally, which algorithm it uses ?
+10. What is virtual function?.
+11. What is the function pointer? explained with an application.
+12.  Assume If u are running a program , it gives the segmentation fault, if run the same program with the GDB it works fine. How you will find the problem in that program? Assume if debugging info is not available, how you will find error in program?.
+13. What is stack? What is Queue?...which is best?
+14. What are the most possible warnings you got during the projects development.
+15. How do u rate yourself in c , c++ , and Unix.
+16. What is volatile?is it  disadvantage as it turns off the optimization?  
+
+
+
+1. write a program to find a factorial of a given number
+2. write a program to sort and reverse a linked list.
+3. About the arrays bound checking.
+4. what will be the content of memory when u invoke malloc().
+5. What is calloc()? how it is differs from malloc().
+6. Explain about the realloc().
+7. What is context switching?
+8. What is preemption?
+9. How control returns from called function to calling function?
+10. Write a simple makefile for the files 1.c and 2.c
+11. About the grep command
+12. About the find and locate command, which is the more efficient
+13. About the bugzilla (if it was mentioned in the resume)
+14. Write a memory layout of the c program, explain the significance of segments in the memory   layout.
+15.  What is inline function, how the compiler will recognizes whether it is inline or not, what is the 
+difference between inline and a normal function.
+16.  What is the advantage of the operator overloading.
+17. Which of the operators are  cannot be overloaded.
+18. What is virtual function. About the V-table in virtual function.
+19. What is semaphore? What is mutex?
+20. What is the difference between the pointer and array, which one is more advantages.
+21. What is smart pointer?
+22. What is memory leak? What is dangling pointer?
+23.  List out the some code snippets which produces the segmentation violation.
+24.  How malloc will works internally. Which algorithm it will follow. Asked about the fragmentation.
+25. Explain about the structure and union. When we will use union in the real time application.
+26. Write the syntax of malloc.
+27. What is the difference between malloc and new.
+28. How does free() will get the information about how many bytes of memory it should free?
+   
+
+1. #include	<stdio.h>
+int main()
+ {
+	int i = 012;
+	fun(i);
+	printf("%d\n", i);
+ }
+fun(int i)
+ {
+	i += 1;
+ }
+
+2. 
+/* Output after compiling both the files, sony2a.c and sony2b.c */
+/* sony2a.c */
+#include	<stdio.h>
+extern int arr[25];
+extern int fun(int *, int );
+int main()
+{
+	fun(arr, sizeof(arr));
+}
+        
+         /* sony2b.c */
+int arr[15];
+int fun(int arr[], int len)
+{
+	if(len > 10)
+		printf("HELLO\n");
+}
+
+
+
+
+
+3. #include	<stdio.h>
+int main()
+{
+	printf("%d\n", argv[argc]);
+}
+4. #include       <stdio.h>	
+int i;
+int main (void)	
+{
+	int j = 10;
+	fun(i,j);
+	printf ("%d %d\n", i,j);
+}
+fun(int i, int j)
+{
+	i = j;
+//	j = i;
+	printf ("%d ",j);
+}
+5. /* Similar type */
+#include	<stdio.h>
+#define max (a,b) a>b?a:b
+int main()
+{
+	int a = 900;
+	int b = 100;
+	int c = max(a,b) + 10;
+	printf("%d\n", c);
+}
+
+
+
+
+
+6. #include       <stdio.h>	
+main ()
+{
+	add(95,54);
+}
+void add(int a, int b)
+{
+	int c;
+	c = a+b;
+	printf("%d\n", c);
+}
+7. #include       <stdio.h>
+int main (void)	
+{
+	char c = 126;
+	c++;
+	if(c == 'a')
+		c--;
+	else
+		c++;
+	printf("%d\n", c);
+}
+8. #include	<stdio.h>
+int main()
+{
+	int *p1[10];
+	int (*p2)[];
+	void *p3();
+}
+How much memory(bytes) is allocated for the above:
+a. 40 4 4
+b. 4 4 0
+c. 40 4 0
+d. 4 4 4
+9. #include       <stdio.h>
+int main (void)	
+{
+	printf("%d\n");
+	printf("");
+	printf();
+}
+Which of the 3 gives error:
+a. 1 & 2
+b. 2 & 3
+c. 3
+d. 1
+10. #include       <stdio.h>
+int main()
+{
+	struct abc {
+		int x;
+		int y;
+		int z;
+	}
+	struct abc v = {1, 2, 3};
+	struct abc *ptr = &v;
+	printf("%d ", v.x);
+	printf("%d ", ptr->z);
+     printf("%d ", (*ptr).z);
+}
+What is the output of the above code:
+a. 1 3 3
+b. Compilation Error
+c. Run time Error
+   d.  None of the above
+
+
+11. #include <stdio.h>
+main()	
+{
+	char *s = "Sony is a Japnese Company";
+	char *ptr = " Japnese";
+	ptr = strstr(s, ptr);
+	strcpy(s, ptr);
+	printf("%s\n", s);
+}
+
+// Similar type of Question
+12. main()
+{
+ char *s ="char*s=%c%s%c%s;main(){clrscr();printf(s,34,s,34);}";
+	printf(s,34,s,34);
+}
+13. #include	<stdio.h>
+#define max(a,b) a>b?a:b
+int main()
+{
+	int a = 900;
+	int b = 100;
+	int c = max(a,b) + 10;
+	printf("%d\n", c);
+}
+
+	14 . # define	CUBE(x)	x*x*x
+
+	int main(void)
+	{
+		int j = 2;
+		int k;
+		k = CUBE(CUBE(++j));
+	
+		cout <<” j is “ <<  j << “k is” << k << endl;
+	}
+
+	what is the output?
+15 .
+	class base {
+		private:
+			int a;
+		base(int x) {
+			a = x;
+			base(5);
+		}
+	};
+
+	int main(void)
+	{
+		base obj(0);
+	}
+
+	what is the output ?
+
+16 below code is correct or not?
+
+	Int main(void) {
+	printf(“%d”, main);
+	}
+	
+	a. YES
+	b   NO
+
+FIRST ROUND:::
+________________________________________
+1:
+why gdb ?how do u debug ?some basic commands used in gdb and their usage
+2:
+explain ur prj SIP and my role in the prj
+3:
+he  thought of asking DSP basics ? I said NO(then he asked my branch of engg)
+4:
+then he asked me wat did i do in GSMAMR and G729 projs
+5:
+how did u optimize the code ?
+6:
+what are the difficulties u faced while porting?
+7:
+questions on alignment(coz i mentioned abt QEMU).
+8:
+progm to check the system is lil endidan or big endian.
+9:
+diff bw unix and windows.(some cross q's)
+10:
+diff bw unix and linux.
+11:
+what do u know abt unix internals?
+12:
+explain memory lyt?
+13:
+explain storage class?then specifier?(i was confused y he didnt ask this q till now :-) )
+
+instantly he gave this progm
+
+#include<stdio.h>
+static int b=100;
+
+int main()
+{
+	static int b=20;
+	int i=2,j=3,k;
+	
+	k= i*b;				/* want access global static b */
+	printf("with global b K=%d\n",k);
+	k = j*b;			/* want access local static b */
+	printf("with local b K=%d\n",k);
+	return 0;
+}
+
+
+14:
+is ARM 16 bit or 32 bit or 64 bit or 128 bit?
+15:
+asked abt SIMD(some how managed)but again one more q on something like MIMD
+16:
+in a sigle instruction how many bytes of data can u fetch?
+17:
+what does LDR do?
+18:
+diff flavors of LDR?
+19:
+do u know abt pipeling in ARM ?
+	explain the same?
+20:
+define data structures?mention them?
+21:
+what if i say stack and queue are not data structures ..and how do u  prove that they are data structure?
+22:
+what are the unix commands u know ?list them and usage?
+
+
+SECOND ROUND::::
+___________________________
+
+1:
+started with gdb again and some questions on make too?
+2:
+what are the unix concepts u know?
+3:
+list the ipc's u know?
+diff bw pipe and sockets?
+4:
+(before getting into this thread concepts he asked me something but i dont remember .after that he asked..)
+how can i create a thread?
+5:
+again memory layout?
+6:
+again absolute and and relative pathnames?
+7:
+again storage classes?
+8:
+inode contents ?
+9:
+if i create a file for the first time .what wil happen at the system level?
+10:
+how do i create a thread?
+
+11:
+how can u implement locks using threads?
+12:
+
+main()
+{
+func();
+}
+void func()
+{
+int i;
+for(i=0;i<5;i++){
+printf("i=%d\n",i);
+func();
+}
+
+
+is there any problem with code?if YES.what is it?how do u fix it?
+
+14:
+how do u find some text in a file?
+15:
+is "xx" is file name .if its not in current dir ,how do i search for that?
+16:
+questions on linked list.
+
+Sony C Test Questions
+What is the output of the following programs:
+1. #include	<stdio.h>
+int main()
+ {
+	int i = 012;
+	fun(i);
+	printf("%d\n", i);
+ }
+fun(int i)
+ {
+	i += 1;
+ }
+2. 
+a) /* Output after compiling both the files, sony2a.c and sony2b.c */
+#include	<stdio.h>
+extern int arr[25];
+extern int fun(int *, int );
+int main()
+{
+	fun(arr, sizeof(arr));
+}
+b) 
+int arr[15];
+int fun(int arr[], int len)
+{
+	if(len > 10)
+		printf("HELLO\n");
+}
+3. #include	<stdio.h>
+int main()
+{
+	printf("%d\n", argv[argc]);
+}
+4. #include       <stdio.h>	
+int i;
+int main (void)	
+{
+	int j = 10;
+	fun(i,j);
+	printf ("%d %d\n", i,j);
+}
+fun(int i, int j)
+{
+	i = j;
+//	j = i;
+	printf ("%d ",j);
+}
+5. /* Similar type */
+#include	<stdio.h>
+#define max (a,b) a>b?a:b
+int main()
+{
+	int a = 900;
+	int b = 100;
+	int c = max(a,b) + 10;
+	printf("%d\n", c);
+}
+6. #include       <stdio.h>	
+main ()
+{
+	add(95, 54);
+}
+void add(int a, int b)
+{
+	int c;
+	c = a+b;
+	printf("%d\n", c);
+}
+7. #include       <stdio.h>
+int main (void)	
+{
+	char c = 126;
+	c++;
+	if(c == 'a')
+		c--;
+	else
+		c++;
+	printf("%d\n", c);
+}
+8. #include	<stdio.h>
+int main()
+{
+	int *p1[10];
+	int (*p2)();
+	int *p3();
+}
+How much memory(bytes) is allocated for the above:
+a. 40 4 4
+b. 4 4 0
+c. 40 4 0
+d. 4 4 4
+9. #include       <stdio.h>
+int main (void)	
+{
+	printf("%d\n");
+	printf("");
+	printf();
+}
+Which of the 3 gives error:
+a. 1 & 2
+b. 2 & 3
+c. 3
+d. 1
+10. #include       <stdio.h>
+int main()
+{
+	struct abc {
+		int x;
+		int y;
+		int z;
+	}
+	struct abc v = {1, 2, 3};
+	struct abc *ptr = &v;
+	printf("%d ", v.x);
+	printf("%d ", ptr->z);
+}
+What is the output of the above code:
+a. 1 3
+b. Compilation Error
+c. Run time Error
+d. None of the above 
+11. #include <stdio.h>
+main()	
+{
+	char *s = "Sony is a Japnese Company";
+	char *ptr = " Japnese";
+	ptr = strstr(s, ptr);
+	strcpy(s, ptr);
+	printf("%s\n", s);
+}
+
+// Similar type of Question
+12. main()
+{
+char *s = "char*s=%c%s%c%s;main(){clrscr();printf(s,34,s,34);}";
+	printf(s,34,s,34);
+}
+13. #include	<stdio.h>
+#define max(a,b) a>b?a:b
+int main()
+{
+	int a = 900;
+	int b = 100;
+	int c = max(a,b) + 10;
+	printf("%d\n", c);
+}
+
+1. What are different Sorting algorithms. Name and Describe all of them.
+2. What is the Time Complexity of an algorithm
+3. What is Big 0 Notation 0(n) ? What is its importance ?
+4. What are the order and Time Complexity of different sorting algorithms.
+5. In which scenario each of Sorting algorithm used for?
+6. What is the Binary Tree ? Implement it .
+7. What is Hashing ?
+8. In  any tree, if you know the number of Tree having one Node ( Say T1 ) and your know the number of tree having two Nodes ( Say T2 ) , how will you find the the number of Leaves.
+9. Write a function for Q8 and implement using a function pointer, the parameters being T1 and T2.
+10. If in a Singly Linked list you are given the address of  one of the nodes. You have to delete this node only and the rest of the data elements of the tree has to remain intact. Explain the logic and implement it in C.
+11. Implement two stacks using same array.
+
+C:
+12. What is the size of int or Integer pointer. On what basis does it depend .
+13. If it is machine dependent, why is it so ?
+14. A code snippet to test your knowledge of Comma Operator.
+15. Given two structure variables of same structure, how will you compare each of them? If you say memcmp they will tell memcmp will not always work and you will be asked to explain why it will not always work.
+
+NETWORKING :
+16.Explain function calls in Client Server Architecture  and in the order in which they occur. Be Very elaborate for this. They are looking for details.They will stop you in between and cross question for details.
+17 Which is blocking function call at the server side.?
+
+PROJECTS :
+18  Explain all your projects 
+19 Why do we need DHCP ?
+20 Before DHCP came into picture, what was used for earlier ?
+21 Explain BOOTP Prototcol.
+22 In DHCP when a client does not have an IP Address how does DHCP server identifies it ?
+23 Different questions related to implementation of Project done for Coaxial Networks.
+
+
+RTOS
+23 . What is the difference between Binary and Mutual Exclusive Semaphore?
+24. What is Priority Ceiling ?
+25. What is Priority Inheritance?
+
+
+Top 100 C Questions Asked in Actual Interviews
+
+1) Difference between arrays and pointers?
+2) What is the purpose of realloc( )?
+3) What is static memory allocation and dynamic memory allocation?
+4) How are pointer variables initialized?
+5) Are pointers integers?
+6) What is a pointer variable?
+7) What is a pointer value and address?
+8) What is a method?
+9) What are the advantages of the functions?
+10) What is the purpose of main( ) function?
+11) What is an argument ? differentiate between formal arguments and actual arguments?
+12) What is a function and built-in function?
+13) What is modular programming?
+14) When does the compiler not implicitly generate the address of the first element of an array?
+15) What are the characteristics of arrays in C?
+16) Differentiate between a linker and linkage?
+17) What are advantages and disadvantages of external storage class?
+18) Diffenentiate between an internal static and external static variable?
+19) What are the advantages of auto variables?
+20) What is storage class and what are storage variable ?
+21) Which expression always return true? Which always return false?
+22) Write the equivalent expression for x%8?
+23) why n++ executes faster than n+1?
+24) what is a modulus operator? What are the restrictions of a modulus operator?
+25) What is the difference between a string and an array?
+26) Is it better to use a pointer to navigate an array of values,or is it better to use a subscripted array name?
+27) Can the sizeof operator be used to tell the size of an array passed to a function?
+28) Is using exit() the same as using return?
+29) Is it possible to execute code even after the program exits the main() function?
+30) What is a static function?
+31) Why should I prototype a function?
+32) How do you print an address?
+33) Can math operations be performed on a void pointer?
+34) How can you determine the size of an allocated portion of memory?
+35) What is a “null pointer assignment” error? What are bus errors, memory faults, and core dumps?
+36) What is the difference between NULL and NUL?
+37) What is the heap?
+38) Can the size of an array be declared at runtime?
+39) What is the stack?
+40) When should a far pointer be used?
+41) What is the difference between far and near?
+42) Is it better to use malloc() or calloc()?
+43) Why should we assign NULL to the elements (pointer) after freeing them?
+44) When would you use a pointer to a function?
+45) How do you use a pointer to a function?
+46) Can you add pointers together? Why would you?
+47) What does it mean when a pointer is used in an if statement?
+48) Is NULL always defined as 0?
+49) What is a void pointer?
+50) What is a null pointer?
+51) How many levels of pointers can you have?
+52) What is indirection?
+53) How do you print only part of a string?
+54) How can I convert a string to a number?
+55) How can I convert a number to a string?
+56) What is the difference between a string copy (strcpy) and a memory copy (memcpy)? When should each be used?
+57) How can you check to see whether a symbol is defined?
+58) How do you override a defined macro?
+59) What is #line used for?
+60) What is a pragma?
+61) What are the standard predefined macros?
+62) How can type-insensitive macros be created?
+63) How many levels deep can include files be nested?
+64) Can include files be nested?
+65) Can you define which header file to include at compile time?
+66) What is the difference between #include and #include “file”?
+67) Is it better to use a macro or a function?
+68) How are portions of a program disabled in demo versions?
+69) What is the benefit of using an enum rather than a #define constant?
+70) What is the benefit of using #define to declare a constant?
+71) Can a file other than a .h file be included with #include?
+72) How can you avoid including a header more than once?
+73) What will the preprocessor do for a program?
+74) What is a macro, and how do you use it?
+75) What is Preprocessor?
+76) How can I make sure that my program is the only one accessing a file?
+77) How can I open a file so that other programs can update it at the same time?
+78) How do you determine whether to use a stream function or a low-level function?
+79) What is the difference between text and binary modes?
+80) How can you restore a redirected standard stream?
+81) How do you redirect a standard stream?
+82) How can I search for data in a linked list?
+83) How can I sort a linked list?
+84) What is hashing?
+85) What is the quickest searching method to use?
+86) What is the easiest searching method to use?
+87) How can I sort things that are too large to bring into memory?
+88) What is the quickest sorting method to use?
+89) What is the easiest sorting method to use?
+90) What is the benefit of using const for declaring constants?
+91) Can static variables be declared in a header file?
+92) What is the difference between declaring a variable and defining a variable?
+93) Is it acceptable to declare/define a variable in a C header?
+94) When should a type cast not be used?
+95) When should a type cast be used?
+96) How can you determine the maximum value that a numeric variable can hold?
+97) How reliable are floating-point comparisons?
+98) Can a variable be both const and volatile?
+99) when should the volatile modifier be used?
+100) When should the register modifier be used? Does it really help?
+
+

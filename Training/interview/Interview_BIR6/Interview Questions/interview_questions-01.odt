@@ -1,0 +1,325 @@
+C Questions
+
+1. 	int main()
+	{
+		unsigned char *c;
+		c = 'A';
+	
+		while (c >= 0)
+			printf("%d\n", (*c)++);
+	}
+
+	What will be the output of above program?
+
+
+
+4. What will be C value?
+		int n = 7;
+		while(n>0) {
+		  n = n & (n-1)
+		  c++;
+		}
+		
+5
+6. 
+
+7. 12. What is the disadvantage of Macro when we use GDB?
+13. 
+16. 
+
+21. write a program to swap  two numbers.
+22. write aprogram to find the first bit set in 32-bit number.
+23.
+35. 	
+36. 
+            So I marked - "ABCyxz" .
+
+43.
+	int a[]={4};
+	int b[] = { 1, 2, 3, 4}
+
+	printf("%d %d ", sizeof(a), sizeof(b));
+
+Ans - 4, 16 ;
+
+44.
+
+	int a[] = { 1, 2, 3, 4};
+	int *p = (&a + 1) ;
+	printf ("ans = %d " , *(a + 1),  *(p - 1) );
+
+
+Ans - 2 4 (values may change , but understand pointer arthematic.)
+
+
+45.
+\
+
+49.
+50. What is function pointers ?
+
+52. write a program to find number of repeated digits in a given mobile
+    No.(example 9886559332  Ans: Repeated digits are 8 5 3 9 ). 
+
+
+58. what is recursion?
+59. what happens if a variable is static within the recursion ?
+60. 
+72. 
+73. 
+74. recursive function to find the factorail of a number.
+75. prototype of main, printf
+76. program to print command line arguments.
+77. 
+80. What is call back fuction & reentrant code? 
+81.  Write a program to create a binary tree & sort it ?
+82.  How does malloc works ?
+83. How to pass entire array to a function as call by value ?
+84. 
+85.
+86. There is one header file which is included in two .c files. In  that header one globle variable is defined. How to avoid multiple declaration error?
+87. Int a;  printf(“%u” , &a)  if it prints 67. Is it possible ? (He wants to ask whether the address of integer can be starts with odd address ?)
+88. Why always cpu wants memory access from even address?
+89. Can you explain the bit fields in the structure?
+90. Write a program to implement stack using linked list.
+91. How can you get the environment variables?
+92. what does ptr++ and *ptr++ will do?
+93. How will u delete a node when u r given the ptr to that node only and not the previous and next nodes
+e94. How to pass entire array to a function as call by value?
+
+95. How stack frames are created when function is invoked? 
+96. Delete a specified node in a single linked list 
+97. How to generate segmentation fault? 
+98.
+99. 
+void fun(int p)
+{
+p=p+1;
+return;
+}
+
+int main()
+{
+int p = 012
+fun(p);
+printf("%d\n",p);
+}
+
+Answer : 10
+
+
+
+115.
+
+
+
+Answer : Compiler error, as space b/w in big & (x,y) in macro defination.
+
+
+
+116.
+
+extern int add(int,int);
+extern int i;
+
+int main()
+{
+	printf("%d",add(100,200));
+}
+
+int add(int a, int b)
+{
+	int i;
+	i=a+b;
+	return(i);
+}
+
+Answer : 300
+
+
+
+
+int main()
+{
+	printf("");
+	printf();
+	printf("%d");
+}
+
+Answer : b is invalid
+
+
+122.
+
+Explain
+int * (*fun)(int (*a)[])
+
+Answer : A function pointer which takes argument as pointer to an integer array
+and returns integer pointer.
+
+123.
+what is size of following..
+
+int *a[10];
+int (*fun)();
+void *fun();
+Answer : 40 4 1
+124.
+file1:
+
+	int a[10];
+	fun(int a[],int size)
+	{
+		printf("%d\n", sizeof(a));
+	
+file2:
+
+	extern int a[];
+	extern fun(int [],int);
+	
+	int main
+	{
+		fun(a, sizeof(a));
+	}
+
+Answer : Compilation Error.
+
+125.
+
+	char *s = "char *s = %c%s%c;main(){printf(s,34,s,34);}";
+	main(){printf(s,34,s,34);}
+Answer : Prints its own code
+
+126. 
+131.  Assume If u are running a program , it gives the segmentation fault, if run the same program with the GDB it works fine. How you will find the problem in that program? Assume if debugging info is not available, how you will find error in program?.
+132. . what will be the content of memory when u invoke malloc().
+136. What is calloc()? how it is differs from malloc().
+137. Explain about the realloc().
+138. What is inline function, how the compiler will recognizes whether it is inline or not, what is the 
+difference between inline and a normal function.
+139.
+144. What is the difference between malloc and new.
+145. How does free() will get the information about how many bytes of memory it should free?
+   
+
+146. #include	<stdio.h>
+int main()
+ {
+	int i = 012;
+	fun(i);
+	printf("%d\n", i);
+ }
+fun(int i)
+ {
+	i += 1;
+ }
+
+147. 
+/* Output after compiling both the files, sony2a.c and sony2b.c */
+/* sony2a.c */
+#include	<stdio.h>
+extern int arr[25];
+extern int fun(int *, int );
+int main()
+{
+	fun(arr, sizeof(arr));
+}
+        
+         /* sony2b.c */
+int arr[15];
+int fun(int arr[], int len)
+{
+	if(len > 10)
+		printf("HELLO\n");
+}
+
+148. #include	<stdio.h>
+int main()
+{
+	printf("%d\n", argv[argc]);
+}
+
+149. #include       <stdio.h>	
+int i;
+int main (void)	
+{
+	int j = 10;
+	fun(i,j);
+	printf ("%d %d\n", i,j);
+}
+fun(int i, int j)
+{
+	i = j;
+//	j = i;
+	printf ("%d ",j);
+}
+
+150. /* Similar type */
+
+
+151. #include       <stdio.h>	
+main ()
+{
+	add(95,54);
+}
+void add(int a, int b)
+{
+	int c;
+	c = a+b;
+	printf("%d\n", c);
+}
+
+
+
+1
+
+
+164.
+main()
+{
+func();
+}
+void func()
+{
+int i;
+for(i=0;i<5;i++){
+printf("i=%d\n",i);
+func();
+}
+is there any problem with code?if YES.what is it?how do u fix it?
+
+165. #include	<stdio.h>
+int main()
+ {
+	int i = 012;
+	fun(i);
+	printf("%d\n", i);
+ }
+fun(int i)
+ {
+	i += 1;
+ }
+
+
+181. What is the purpose of realloc( )?
+182. What is static memory allocation and dynamic memory allocation?
+188. What are the advantages of the functions?
+189. What is the purpose of main( ) function?
+190. What is an argument ? differentiate between formal arguments and actual arguments?
+191. What is a function and built-in function?
+192. What is modular programming?
+195. Differentiate between a linker and linkage?
+207. Is it possible to execute code even after the program exits the main() function?
+208. What is a static function?
+209. Why should I prototype a function?
+214. What is the difference between NULL and NUL?
+219. Is it better to use malloc() or calloc()?
+221. When would you use a pointer to a function?
+222. How do you use a pointer to a function?
+225. 253. How can I make sure that my program is the only one accessing a file?
+254. How can I open a file so that other programs can update it at the same time?
+255. How do you determine whether to use a stream function or a low-level function?
+256. What is the difference between text and binary modes?
+257. How can you restore a redirected standard stream?
+258. How do you redirect a standard stream?
+259.

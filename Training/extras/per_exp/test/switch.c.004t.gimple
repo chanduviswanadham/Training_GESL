@@ -1,0 +1,24 @@
+main ()
+{
+  int D.1831;
+  int i;
+
+  i = 10;
+  switch (i) <default: <D.1829>, case 10: <D.1827>>
+  {
+    int i;
+
+    __builtin_puts (&"printf"[0]);
+    i = 15;
+    <D.1827>:
+    printf ("i value is :%d", i);
+    goto <D.1828>;
+    <D.1829>:
+    __builtin_puts (&"ajksdgafhskjdf"[0]);
+  }
+  <D.1828>:
+  D.1831 = 0;
+  return D.1831;
+}
+
+

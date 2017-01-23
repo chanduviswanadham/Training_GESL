@@ -1,0 +1,1 @@
+cmd_/home/viswanadham/Training/extras/per_exp/device_drivers/hello.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/viswanadham/Training/extras/per_exp/device_drivers/hello.ko /home/viswanadham/Training/extras/per_exp/device_drivers/hello.o /home/viswanadham/Training/extras/per_exp/device_drivers/hello.mod.o

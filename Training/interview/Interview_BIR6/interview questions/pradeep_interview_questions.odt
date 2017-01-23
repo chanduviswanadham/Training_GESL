@@ -1,0 +1,21 @@
+﻿Automotive interview questions.
+
+1. What is data type, declaration and definition?
+2. What are the storage classes and storage class specifiers? Explain.
+3. What is the difference between macro and inline function?
+4. Write a C program to swap two numbers using bitwise operator.
+5. Explain about const, volatile and const volatile.
+6. Which gcc command is used to convert the warning into an error?
+7. What is bit field and why we need bit fields?
+8. Memory Layout.
+9. Write a function to find the size of a variable without using sizeof operator.
+10. Difference between malloc and calloc.
+11. Write bubble sort function.
+12. Write a function to find the loop in a linked list.
+13. How will you register the capabilities of the driver to the kernel?
+14. System Call mechanism.
+15. Explain about logical address, virtual address and physical address.
+16. What is File System and Virtual File System?
+17. Difference between process and a thread.
+18. Difference between mutex and binary semaphore.
+19. What is IPC? Explain all the IPC mechanisms.

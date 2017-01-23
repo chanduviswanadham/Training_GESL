@@ -1,0 +1,29 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1823, cgraph_uid=0)
+
+main ()
+{
+  int i;
+  int D.1830;
+  int _2;
+
+  <bb 2>:
+  i_1 = 10;
+  switch (i_1) <default: <L1>, case 10: <L0>>
+
+<L0>:
+  printf ("i value is :%d", i_1);
+  goto <bb 5>;
+
+<L1>:
+  __builtin_puts (&"ajksdgafhskjdf"[0]);
+
+  <bb 5>:
+  _2 = 0;
+
+<L3>:
+  return _2;
+
+}
+
+

@@ -1,0 +1,78 @@
+﻿
+1) linked list program to delete all same node from the list ( in a single traversing )
+
+
+2) fork, vfork , exec system call + woking
+3) clone system call
+4) thread and process diffrence
+5) mutex and semaphore diff
+6) spin lock functionality
+
+7) memory management and struct of memory
+
+8) about macro and inline function
+
+
+9) static and dynamic library
+10) char a[]="robin"; //character array
+        char *p = "robin"; //null terminated
+        difference
+11) got and PLT working
+12) how the make file work exe : gcc -o main main.c
+13) gdb break and watch point diffrence
+14) what are things you can call through gdb ( file, line ...)
+15) sliding window protocol
+16) TCP is relible and IP is unrelible why and how ?
+17) why we need 2 times ( segmentation and fragmentation )
+18) why TCP ( reliable ) above IP ( unreliable ) proper block over broked block 	to sit
+19) handshaking
+20) prcess and thread diff
+21) int main ()
+{
+fork ();
+fork ();
+ fork ();
+pf (" hi\n");
+}
+ how many time it wil print hi and why ?
+Ans: power(2,n), n is number of porks;
+
+22) diff between static and dynamic linking
+23) macro and inline function and when it will resolve and who will resolve?+ condition ( is evry time inline will be inline
+
+24) signal handler in the case of child ( when the signal wll be handled ) if parent recieve signal and then creted child and child executed first then when signal will be handled and who wll handle ?
+
+25) reverse linked list
+
+26) memcpy and strcpy
+
+
+27) sizeof() operator or function or macro, justify.
+     If its operator whether operator returs?
+        // compile time operator.
+28) why typecasting at malloc.
+29) malloc vs calloc and what is realloc.
+30) whether malloc contiguos or linked list.
+32) all ipc explanation with system calls (pipes, msg q, shared mem, semapore, socket)
+
+33) socket program
+34) how open sytem call work( with file table, UFDT, IT)
+35) how read write system call work.
+
+36) Filesystem structure, Kernel architecture
+
+37) abcd=>cdab is (abcd << 8 | abcd >>8) (bit rotation)
+38) Queue/ stack using linked list/array
+39) Sorting and Searching(important): binary search, linear search, bubble sort, selection sort, quick sort, merge sort, insertion sort , heap sort (For all If u know logic is enough.)
+40) difference b/w heap sort an insertion sort
+
+
+
+
+
+
+
+
+
+
+ 

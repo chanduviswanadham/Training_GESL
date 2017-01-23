@@ -1,0 +1,26 @@
+1. Goto www.kernel.org -> download the latest stable version of linux kernel
+2. su
+   #lshw -html >& host.html
+3. Open the host.html with the help of web browser -> file:///home/name/host.html
+4. Do the following
+	ls Downloads
+	Untar the latest kernel you have downloaded in the folder/usr/src -> This is the standard folder to place the linux source tree
+	cd /usr/src	
+	tar -xvjf /home/name/Downloads/linux.x.xx
+	cd linux-x.xx/
+	mkdir build -> all the configuration files, compiled object files & executable files will be placed in this folder
+	mkdir logs -> to hold the log files
+	
+5. make O=build menuconfig -> configuring the kernel through UI
+	O=build is to tell make to place all configration files and output of the make target in general in build folder
+	5.1 To enable a feature to be part of base kernel we press *
+	5.2 To enable a feature as a module we press m
+	5.3 To disable a feature we press we press n
+6. make O=build bzImage >& logs/bzImage -> To compile the base kernel and compress it in bzip format
+7. make O=build modules >& logs/modules -> To compile the kernel modules
+8. make O=build module_install >& logs/modules_install -> To install the kernel modules in the standard folder
+9. make O=build install -> To install base kernel, initramfs, config files, system.maps files in /boot folder
+
+10. reboot
+11. update-grub
+

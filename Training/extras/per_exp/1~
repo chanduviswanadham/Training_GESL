@@ -1,0 +1,33 @@
+#include <stdlib.h>
+
+ 
+
+struct a {
+
+    struct b *m;
+
+    int n;
+
+} p;
+
+struct b {
+	double b;
+}
+
+ 
+
+int main()
+
+{
+
+    p.m = malloc (8);
+
+    p.m->h = 9;
+
+ 
+
+    return 0;
+
+ 
+
+}

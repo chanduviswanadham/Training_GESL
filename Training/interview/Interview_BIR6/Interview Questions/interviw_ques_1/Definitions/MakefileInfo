@@ -1,0 +1,67 @@
+VPATH : - Searching directories for prerequisites.
+	- Variable
+vpath : - Selective searching directories for prerequisites
+
+MAKEFLAGS : - Recursive invocations of 'make'.
+	    - Options passed through the variable
+
+automatic variables : $% - The target member name, when the target is an archive member. *Note Archives::.  For example, if the target is `foo.a(bar.o)' then `$%' is `bar.o' and `$@' is `foo.a'.  `$%' is empty when the target is not an archive member.
+		      $@ - Target name
+		      $^ - All prerequisites and no duplicate 
+		      $+ - All prerequisites and duplicates also
+		      $? - all prerequisites that are never than the target
+		      $< - First prerequisite
+		      $* - similar extension files form prerequisites (pattern match)
+
+
+Makefile options : 	-v = version
+			-h = help
+			-C = change directory
+			-o = Avoiding recompilation of old(some) file.
+			-k = keep going as much as possible after an error
+			-S = no keep going i.e. cancle the effect of the -k option and mostly used in recursive makefile
+			--trace = show tracing information off make execution
+			-i = Ignore errors
+			-I = include directory
+			-s = silent i.e. dont display any commands on terminal
+			-d = print debugging information (--debug=a(all)/v(verbose)/ etc))
+			-n = list out the commands or just print
+			-p = print databases
+			-j = jobs (-j4 i.e. number of jobs to execute simulteniously)
+			-t = touch i.e. mark them up to date without realyyy changing them
+			-f = selecting files
+			-B = always make if it is up to date also
+			-w = print the message containing the working directory
+			--no-print-directory = reverse of -w
+
+
+Standard veriables : CFLAGS, LDFLAGS, CC, INSTALL, MAKEFLAGS or MFLAGS
+
+Standard Targets for users : all - Compile the entire program
+			     install - Compile the program  and move the file to respected directory.
+			     clean - Delete all files created by this makefile
+			     distclean - Delete all files created by this makefile(.config file also)
+			     check - perform self-tests (if any)
+			     
+
+'-' = Ignore error
+'+' = Execute commands if it is in do not execute mode.(eg. make -n option)
+'@' = Don't display the command on screen 
+
+% - pattern matching like (%.o : %.c)
+Wildcard : * = selectiong all files form directory and which will work on shell commands
+
+Setting veriables :   	+= -> Appending or concatination
+			:= or ::=  -> simply expanded veriables
+			= -> recursively expanded
+			?= -> If you'd like a variable to be set to a value only if it's not already set, then you can use the shorthand operator `?=' instead of `='.
+			!= -> This operator first evaluates the right-hand side, then passes that result to the shell for execution.
+
+
+Special built-in target names : 
+	.PHONY : There are two reasons to use a phony target: to avoid a conflict with a file of the same name, and to improve performance. It contains only targets which are not file created by commands or recipe.
+	.INTERMEDIATE :
+	.SECONFARY : 
+	.DELETE_ON_ERROR : If error came, dont create target
+	.IGNORE : to ignore errors for target
+	.SILENT : dont display commands

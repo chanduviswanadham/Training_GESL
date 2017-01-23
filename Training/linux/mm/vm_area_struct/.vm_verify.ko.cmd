@@ -1,0 +1,1 @@
+cmd_/home/viswanadham/Training/linux/mm/vm_area_struct/vm_verify.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/viswanadham/Training/linux/mm/vm_area_struct/vm_verify.ko /home/viswanadham/Training/linux/mm/vm_area_struct/vm_verify.o /home/viswanadham/Training/linux/mm/vm_area_struct/vm_verify.mod.o
